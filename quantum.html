@@ -47,7 +47,33 @@
 
     <section id="programs">
         <h2>Python Programs</h2>
-        <p>Showcasing the speed and ability of quantum algorithms using Python.</p>
+        <p>Showcasing the speed and ability of quantum algorithms using Python.
+            <code><pre>
+                #include < iostream > 
+                    #include "qpp.h"
+                    
+                    int main() {
+                        using namespace qpp;
+                    
+                        // Create a Bell state (entangled state)
+                        ket bell_state = (1/sqrt(2)) * (ket::Zero() + ket::One());
+                    
+                        // Alice's qubit to be teleported
+                        ket alice_qubit = ket::Zero();
+                    
+                        // Bob's qubit (initially in |0>)
+                        ket bob_qubit = ket::Zero();
+                    
+                        // Alice and Bob share the Bell state
+                        std::cout << "Alice's qubit: " << alice_qubit << std::endl;
+                        std::cout << "Bell state: " << bell_state << std::endl;
+                    
+                        // Perform measurement and teleportation logic here...
+                    
+                        return 0;
+                    }
+                </pre></code>
+        </p>
         <canvas id="graphCanvas"></canvas>
     </section>
 
