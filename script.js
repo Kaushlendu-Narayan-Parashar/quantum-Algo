@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const maxData = Math.max(...data);
     const graphHeight = canvas.height - 20;
 
+    
     // Draw graph
     ctx.beginPath();
     ctx.moveTo(20, graphHeight - (data[0] / maxData) * graphHeight);
